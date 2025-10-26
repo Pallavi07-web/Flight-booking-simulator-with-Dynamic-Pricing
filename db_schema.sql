@@ -88,4 +88,7 @@ INSERT Booking:
 Insert into bookings(flight_id,passenger_full name,passenger_contact,seat_no)
 Values (1,'Alice Johnson',9123456780,45) Commit;
 rollback;
+
 -- End of db_schema.sql
+
+to run this code type ctrl+shift+Q
