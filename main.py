@@ -1415,3 +1415,4 @@ if __name__ == "__main__":
     )
     print(booking_example.json(indent=2))
 
+to run this code type fastapi dev main.py
