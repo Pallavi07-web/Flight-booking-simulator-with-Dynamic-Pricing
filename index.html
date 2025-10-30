@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Booking App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Flight Search</h1>
+    <form id="searchForm">
+      <input type="text" id="from" placeholder="From" required />
+      <input type="text" id="to" placeholder="To" required />
+      <input type="date" id="departure" required />
+      <select id="airline">
+        <option value="">All Airlines</option>
+        <option value="Air India">Air India</option>
+        <option value="IndiGo">IndiGo</option>
+        <option value="SpiceJet">SpiceJet</option>
+      </select>
+      <input type="range" id="price" min="1000" max="10000" value="10000" />
+      <span>Max Price: ₹<span id="priceValue">10000</span></span>
+      <select id="time">
+        <option value="">Any Time</option>
+        <option value="morning">Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+      </select>
+      <button type="submit">Search Flights</button>
+    </form>
+
+    <div id="loader" class="loader" style="display:none;"></div>
+    <div id="results"></div>
+
+    <div id="bookingForm" style="display:none;">
+      <h3>Passenger Info</h3>
+      <input type="text" id="passengerName" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+
+    <div id="receiptSection" style="display:none;">
+      <h3>Booking Confirmed</h3>
+      <p id="pnrDisplay"></p>
+      <button onclick="downloadReceipt()">Download Receipt</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
