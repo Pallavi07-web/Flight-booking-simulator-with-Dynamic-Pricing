@@ -1,0 +1,46 @@
+# ✈️ Flight Booking Web App
+
+A responsive and dynamic flight booking web application built using HTML, CSS, and JavaScript. This project integrates real-time flight search and booking APIs, supports multi-step booking flows, and generates downloadable receipts.
+
+---
+
+## 🚀 Features
+
+- **Modern UI Design**: Built with HTML, CSS, and JavaScript for a clean, intuitive user experience.
+- **Flight Search Integration**: Connects to external APIs to fetch live flight data.
+- **Dynamic Pricing**: Displays real-time prices in search results based on API responses.
+- **Multi-Step Booking Flow**: Guides users through flight selection, passenger details, payment, and confirmation.
+- **PNR Generation**: Displays a unique Passenger Name Record (PNR) after successful booking.
+- **Receipt Generation**: Allows users to download booking receipts in PDF or JSON format.
+- **Final Polish & Testing**: Includes UI refinements, bug fixes, and performance optimizations.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Technology         |
+|--------------|--------------------|
+| Frontend     | HTML, CSS, JavaScript |
+| APIs         | Flight Search & Booking APIs (e.g., Amadeus, Skyscanner, etc.) |
+| PDF Export   | jsPDF or html2pdf.js |
+| JSON Export  | Native JS Blob & FileSaver.js |
+| Deployment   | GitHub Pages / Netlify / Vercel |
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/pallavi-07/flight-booking-app.git
+cd flight-booking-app
+npm install  # if using bundlers or tools
+
+
+flight_booking_simulator
+    index.html
+    style.css
+        main.css
+    script.js
+        api.js
+        booking.js
+        recipt.js
