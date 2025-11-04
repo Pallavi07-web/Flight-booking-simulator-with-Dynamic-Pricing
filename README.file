@@ -1,0 +1,242 @@
+
+# Flight Booking Simulator With Dynamic Pricing
+
+This project is a web-based flight booking simulator that mimics real-world airline systems. It features a dynamic pricing engine that adjusts ticket prices based on demand, time of day, and seat availability. Built for developers and learners, the simulator demonstrates how pricing algorithms and booking flows work in modern travel applications.
+🎯 Key Highlights
+- Dynamic Pricing Logic: Prices fluctuate based on demand level, booking time, and remaining inventory
+- Multi-step Booking Flow: Includes flight selection, passenger details, price confirmation, and receipt generation
+- PNR Generation: Each booking generates a unique Passenger Name Record
+- Receipt Download: Users can download a detailed receipt after booking
+- Responsive UI: Built with HTML, CSS, and JavaScript , optimized for desktop and mobile
+💡 Use Cases
+- Educational demo for pricing algorithms
+- Frontend development practice with real-world features
+- Prototype for travel tech applications
+
+
+## Features
+
+- Dynamic Pricing Engine: Prices adjust based on seat availability, demand, and time to departure.
+- Multi-Step Booking Flow: Includes flight selection, passenger details, payment simulation, and confirmation.
+- PNR Generation: Unique Passenger Name Record (PNR) created for each booking.
+- Receipt Download: Generates and downloads a PDF receipt post-booking.
+- Responsive UI: Clean, mobile-friendly interface with intuitive navigation.
+- LocalStorage Integration: Persists booking data across sessions.
+- Mock API Backend: Simulates real-time flight data and booking endpoints.
+
+## Tech Stack
+
+# Frontend
+  HTML
+  CSS
+  JS
+
+# Backend
+   Node.js + Express (or mock JSON server)
+   RESTful APIs
+   
+# uitilities
+   localStorage, PDFKit
+   UUID, Date-fns
+## Installation
+ 
+git clone https://github.com/Pallavi-07/flight-booking-simulator.git
+cd flight-booking-simulator
+npm install pip install fastapi
+npm start
+    
+## project structure
+
+Flight_Booking_Simulator/
+  Public/
+    db_schema.sql
+     flight.db
+    main.py
+     database.py
+     debug_search.py
+     test_booking_flow.cpython-314-pytest-8.4.2.pyc
+     test_booking_flow
+    index.html
+    style.css
+    script.js
+    
+
+    
+
+## Dynamic Pricing Logic
+
+This module implements a dynamic pricing algorithm for a flight booking app. Prices adjust in real-time based on demand, time of day, and remaining inventory.
+🔧 How It Works
+The pricing function takes four inputs:
+- basePrice: The starting price of the ticket
+- demandLevel: "low", "medium", or "high"
+- timeOfDay: Hour of the day (0–23)
+- inventoryLeft: Number of seats remaining
+
+## Booking flow
+
+This simulator guides users through a multi-step flight booking process, mimicking real-world airline systems. Each step is modular and interactive, ensuring a smooth user experience.
+🛒 Step-by-Step Booking Flow
+- Flight Selection
+- User selects origin, destination, date, and preferred flight
+- Dynamic pricing is applied based on demand, time, and inventory
+- Passenger Details
+- Form to enter passenger name, age, gender, and contact info
+- Validation ensures all required fields are completed
+- Price Confirmation
+- Final price is displayed with breakdown (base + dynamic adjustments)
+- Option to go back and modify flight or passenger details
+- Booking Confirmation
+- Unique PNR (Passenger Name Record) is generated
+- Booking details are saved locally or sent to backend (if integrated)
+- Receipt Generation
+- A downloadable receipt is created with flight and passenger info
+- Includes timestamp, PNR, and total fare
+
+ Flow Diagram (Textual)
+[Flight Selection] → [Passenger Details] → [Price Confirmation] → [Booking Confirmation] → [Receipt Download]
+
+
+Example PNR Output
+{
+  "pnr": "6F3A9B",
+  "name": "Yechuru",
+  "flight": "HYD → DEL",
+  "date": "2025-11-10",
+  "price": 10725
+}
+
+
+
+
+
+## Deployment
+
+You can deploy this flight booking simulator using any static hosting service or backend-integrated platform. Below are the recommended options:
+🔧 Static Deployment (Frontend Only)
+ project is built with HTML, CSS, and JavaScript:
+ - VS Code installed
+- A modern browser (e.g., Chrome, Edge)
+-  Live Server extension for auto-reloading
+🖥️ Backend Deployment (Optional)
+ simulator includes backend logic (e.g., Node.js, Express):
+- Set up environment variables for pricing APIs or databases
+- Deploy frontend and backend separately 
+
+
+
+
+
+
+
+## Testing
+
+This project includes basic testing to ensure the reliability of core modules like dynamic pricing, booking flow, and receipt generation.
+✅ What’s Tested
+- Dynamic Pricing Logic
+- Verifies correct price adjustments based on demand, time, and inventory
+- PNR Generation
+- Ensures unique and valid PNR codes for each booking
+- Receipt Output
+- Confirms receipt includes correct passenger and flight detail
+🧰 Tools Used
+- Jest for unit testing (JavaScript/React)
+- Live Server or browser for manual UI testing
+3. Manual testing in browser
+- Open index.html in VS Code
+- Right-click → Open with Live Server
+- Interact with the booking flow and verify:
+- Price updates correctly
+- PNR is generated
+- Receipt downloads properly
+npm install
+npm test
+## Future Enhancement
+
+This project lays the foundation for a realistic flight booking experience. Planned improvements include:
+- 🔗 Backend Integration
+- Connect to a real-time flight API for live schedules and availability
+- Store bookings in a database (e.g., MongoDB, Firebase)
+- 📱 Mobile Responsiveness
+- Optimize layout and interactions for mobile and tablet devices
+- 🧠 Smarter Pricing Engine
+- Incorporate machine learning to predict prices based on historical data
+- Add competitor-based and seasonal pricing logic
+- 👥 User Accounts
+- Enable login/signup for personalized booking history and saved preferences
+- 📨 Email Confirmation
+- Send booking confirmation and receipt via email using SMTP or third-party services
+- 🌐 Multi-language Support
+- Add internationalization (i18n) for global users
+- 🧪 Automated Testing
+- Expand unit and integration tests for booking flow and pricing logic
+
+
+
+## Credits
+
+Special thanks to the following contributors and resources that helped shape this project:
+- Team – Project creators and developer of the flight booking simulator and dynamic pricing logic
+- Live Server by Ritwick Dey – Used for local development and live preview in VS Code
+- Jest – JavaScript testing framework for validating pricing logic
+- Visual Studio Code – Primary IDE used for development
+- Open-source community – For inspiration, code snippets, and documentation best practices
+ external libraries, APIs, or design assets:
+- Font Awesome – Icons used in the UI
+- Unsplash – Sample images for flight destinations
+- Moment.js – Date formatting utility 
+
+## License
+
+MIT license
+
+Add the below content:
+
+Copyright (c) 2025 Vidzai Digital
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+## API Reference
+
+
+This project may use external or internal APIs to enhance functionality such as flight data, pricing, or booking management. Below are the APIs referenced or planned for integration:
+✈️ Flight Data API (Optional)
+- Purpose: Fetch real-time flight schedules, routes, and availability
+- Example: AviationStack API
+- Endpoint: GET /flights?dep_iata=DEL&arr_iata=HYD
+- Response:
+{
+  "flight_date": "2025-11-10",
+  "flight_status": "scheduled",
+  "departure": { "airport": "Indira Gandhi Intl", "iata": "DEL" },
+  "arrival": { "airport": "Rajiv Gandhi Intl", "iata": "HYD" }
+}
+
+
+💰 Dynamic Pricing API (Internal)
+- Purpose: Calculate ticket price based on demand, time, and inventory
+- Endpoint: POST /api/pricing
+- Request Body:
+{
+  "basePrice": 5000,
+  "demandLevel": "high",
+  "timeOfDay": 20,
+  "inventoryLeft": 8
+}
+- Response:
+{
+  "finalPrice": 10725
+}
+
+
+📧 Email Notification API (Planned)
+- Purpose: Send booking confirmation and receipt to user email
+
+
+
+
