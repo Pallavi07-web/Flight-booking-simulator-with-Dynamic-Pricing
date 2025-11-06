@@ -34,7 +34,7 @@ Python 3.8+
 git (optional, for cloning the repo)
 Step 1: Clone the Repository and Set Up Environment
 # Clone the repository
-git clone [[https://github.com/YourUsername/flight-booking-simulator.git](https://github.com/YourUsername/flight-booking-simulator.git)](https://github.com/pallavi07-Web/Flight-Booking-Simulator-Dynamic_Pricing-.git)
+git clone [[https://github.com/YourUsername/flight-booking-simulator.git](https://github.com/YourUsername/flight-booking-simulator.git)](https://github.com/pallavi07-Web/Flight-Booking-Simulator-with-Dynamic-Pricing-.git)
 cd flight-booking-simulator
 
 # Create and activate a virtual environment
